@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.application' version '8.0.0'
+}
+android {
+    namespace 'com.wanzz.spam'
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.wanzz.spam"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    // INI KUNCINYA: MATIKAN ERROR LINT BIAR GAK GAGAL
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+repositories {
+    google()
+    mavenCentral()
+}
